@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StudentGradingSystem
+namespace StudentGradingSystem.GUI
 {
-    public partial class LoginForm : Form
+    public partial class FacultyCourseStudentsForm : Form
     {
-        public LoginForm()
+        public FacultyCourseStudentsForm()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

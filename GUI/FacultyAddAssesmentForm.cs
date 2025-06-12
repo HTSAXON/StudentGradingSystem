@@ -8,16 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StudentGradingSystem
+namespace StudentGradingSystem.GUI
 {
-    public partial class LoginForm : Form
+    public partial class FacultyAddAssesmentForm : Form
     {
-        public LoginForm()
+        public FacultyAddAssesmentForm()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

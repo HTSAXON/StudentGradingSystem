@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace StudentGradingSystem
 {
-    public partial class LoginForm : Form
+    public partial class StudentDashboardForm : Form
     {
-        public LoginForm()
+        public StudentDashboardForm()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void StudentDashboardForm_Load(object sender, EventArgs e)
         {
 
         }

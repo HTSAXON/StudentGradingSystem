@@ -8,16 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace StudentGradingSystem
+namespace StudentGradingSystem.GUI
 {
-    public partial class LoginForm : Form
+    public partial class AdminViewCoursesForm : Form
     {
-        public LoginForm()
+        public AdminViewCoursesForm()
         {
             InitializeComponent();
         }
 
-        private void label2_Click(object sender, EventArgs e)
+        private void lable_courses_Click(object sender, EventArgs e)
         {
 
         }

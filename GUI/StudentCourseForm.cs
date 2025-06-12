@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace StudentGradingSystem
 {
-    public partial class LoginForm : Form
+    public partial class StudentCourseForm : Form
     {
-        public LoginForm()
+        public StudentCourseForm()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

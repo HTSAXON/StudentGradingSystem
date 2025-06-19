@@ -10,9 +10,9 @@ namespace StudentGradingSystem.BL
 {
     public class StudentBl
     {
-        private UserDto UserDto {  get; set; }
-        public StudentBl(UserDto user) { 
-            UserDto = user;
+        private UserDto userDto {  get; set; }
+        public StudentBl(UserDto user) {
+            userDto = user;
         }
 
         public Form CourseForm()

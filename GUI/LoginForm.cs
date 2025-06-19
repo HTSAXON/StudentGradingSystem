@@ -49,8 +49,8 @@ namespace StudentGradingSystem.GUI
                 else
                 {
                     //MessageBox.Show("Good");
-                    form.Show();
-                    this.Hide();
+                    form.ShowDialog();
+                    //this.Hide();
                 }
 
             }

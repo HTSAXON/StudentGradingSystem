@@ -1,4 +1,4 @@
-﻿namespace StudentGradingSystem
+﻿namespace StudentGradingSystem.GUI
 {
     partial class StudentCourseForm
     {

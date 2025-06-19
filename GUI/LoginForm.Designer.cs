@@ -1,4 +1,4 @@
-﻿namespace StudentGradingSystem
+﻿namespace StudentGradingSystem.GUI
 {
     partial class LoginForm
     {
@@ -32,9 +32,9 @@
             label2 = new Label();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            button1 = new Button();
+            inputUserName = new TextBox();
+            inputPassword = new TextBox();
+            btnLogin = new Button();
             SuspendLayout();
             // 
             // label1
@@ -90,33 +90,34 @@
             label4.TabIndex = 3;
             label4.Text = "Username";
             // 
-            // textBox1
+            // inputUserName
             // 
-            textBox1.Location = new Point(249, 205);
-            textBox1.Margin = new Padding(4, 4, 4, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(431, 25);
-            textBox1.TabIndex = 4;
+            inputUserName.Location = new Point(249, 205);
+            inputUserName.Margin = new Padding(4);
+            inputUserName.Name = "inputUserName";
+            inputUserName.Size = new Size(431, 25);
+            inputUserName.TabIndex = 4;
             // 
-            // textBox2
+            // inputPassword
             // 
-            textBox2.Location = new Point(249, 316);
-            textBox2.Margin = new Padding(4, 4, 4, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(431, 25);
-            textBox2.TabIndex = 5;
+            inputPassword.Location = new Point(249, 316);
+            inputPassword.Margin = new Padding(4);
+            inputPassword.Name = "inputPassword";
+            inputPassword.Size = new Size(431, 25);
+            inputPassword.TabIndex = 5;
             // 
-            // button1
+            // btnLogin
             // 
-            button1.BackColor = Color.DarkGray;
-            button1.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(104, 442);
-            button1.Margin = new Padding(4, 4, 4, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(577, 41);
-            button1.TabIndex = 6;
-            button1.Text = "Log in";
-            button1.UseVisualStyleBackColor = false;
+            btnLogin.BackColor = Color.DarkGray;
+            btnLogin.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnLogin.Location = new Point(104, 442);
+            btnLogin.Margin = new Padding(4);
+            btnLogin.Name = "btnLogin";
+            btnLogin.Size = new Size(577, 41);
+            btnLogin.TabIndex = 6;
+            btnLogin.Text = "Log in";
+            btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // LoginForm
             // 
@@ -125,14 +126,14 @@
             BackgroundImage = Properties.Resources.background;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(783, 588);
-            Controls.Add(button1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnLogin);
+            Controls.Add(inputPassword);
+            Controls.Add(inputUserName);
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(label1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "LoginForm";
             Text = "Form1";
             ResumeLayout(false);
@@ -146,9 +147,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox inputUserName;
+        private System.Windows.Forms.TextBox inputPassword;
+        private System.Windows.Forms.Button btnLogin;
     }
 }
 

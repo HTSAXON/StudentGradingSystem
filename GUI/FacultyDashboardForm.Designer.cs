@@ -153,6 +153,7 @@
             Controls.Add(label4);
             Name = "FacultyDashboardForm";
             Text = "Faculty Dashboard";
+            FormClosed += FacultyDashboardForm_FormClosed;
             Load += FacultyDashboardForm_Load;
             ResumeLayout(false);
             PerformLayout();

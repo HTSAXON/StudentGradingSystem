@@ -7,14 +7,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using StudentGradingSystem.DTO;
 
 namespace StudentGradingSystem.GUI
 {
     public partial class FacultyDashboardForm : Form
     {
-        public FacultyDashboardForm()
+        private UserDto userDto { get; set; }
+        public FacultyDashboardForm(UserDto userDto)
         {
             InitializeComponent();
+            this.userDto = userDto;
         }
 
         private void FacultyDashboardForm_Load(object sender, EventArgs e)
@@ -31,5 +34,7 @@ namespace StudentGradingSystem.GUI
         {
 
         }
+
+        private void FacultyDashboardForm_FormClosed(object sender, FormClosedEventArgs e) => Owner.Close();
     }
 }

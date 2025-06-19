@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             label1 = new Label();
-            button1 = new Button();
+            btnViewResults = new Button();
             SuspendLayout();
             // 
             // label1
@@ -45,16 +45,17 @@
             label1.TabIndex = 0;
             label1.Text = "Admin Panel";
             // 
-            // button1
+            // btnViewResults
             // 
-            button1.Font = new Font("Microsoft Tai Le", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.Location = new Point(336, 208);
-            button1.Margin = new Padding(4, 4, 4, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(385, 85);
-            button1.TabIndex = 1;
-            button1.Text = "View Results";
-            button1.UseVisualStyleBackColor = true;
+            btnViewResults.Font = new Font("Microsoft Tai Le", 26.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnViewResults.Location = new Point(338, 381);
+            btnViewResults.Margin = new Padding(4);
+            btnViewResults.Name = "btnViewResults";
+            btnViewResults.Size = new Size(385, 85);
+            btnViewResults.TabIndex = 1;
+            btnViewResults.Text = "View Results";
+            btnViewResults.UseVisualStyleBackColor = true;
+            btnViewResults.Click += btnViewResults_Click;
             // 
             // AdminDashboardForm
             // 
@@ -63,11 +64,12 @@
             BackgroundImage = Properties.Resources.background;
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1067, 588);
-            Controls.Add(button1);
+            Controls.Add(btnViewResults);
             Controls.Add(label1);
-            Margin = new Padding(4, 4, 4, 4);
+            Margin = new Padding(4);
             Name = "AdminDashboardForm";
             Text = "Admin Dashboard";
+            FormClosed += AdminDashboardForm_FormClosed;
             Load += AdminDashboardForm_Load;
             ResumeLayout(false);
             PerformLayout();
@@ -77,7 +79,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnViewResults;
     }
 }
 

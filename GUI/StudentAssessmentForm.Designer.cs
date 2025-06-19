@@ -1,4 +1,4 @@
-﻿namespace StudentGradingSystem
+﻿namespace StudentGradingSystem.GUI
 {
     partial class StudentAssessmentForm
     {
@@ -74,7 +74,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 17F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(798, 588);
+            ClientSize = new Size(798, 464);
             Controls.Add(dataGridView1);
             Margin = new Padding(4, 4, 4, 4);
             Name = "StudentAssessmentForm";

@@ -22,7 +22,7 @@ namespace StudentGradingSystem.GUI
         {
             InitializeComponent();
             userDto = user;
-            StudentBl studentBl =  new StudentBl(userDto);
+            studentBl =  new StudentBl(userDto);
         }
 
         private void StudentDashboardForm_Load(object sender, EventArgs e)
@@ -30,12 +30,15 @@ namespace StudentGradingSystem.GUI
 
         }
 
-        private void StudentDashboardForm_FormClosed(object sender, FormClosedEventArgs e) => Owner.Close();
+        private void StudentDashboardForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            // Owner.Close();
+        }
 
 
         private void btnViewCourses_Click(object sender, EventArgs e)
         {
-            Form form = studentBl.CourseForm();
+            Form form = this.studentBl.CourseForm();
             form.ShowDialog();
         }
 

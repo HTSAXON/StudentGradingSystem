@@ -28,7 +28,10 @@ namespace StudentGradingSystem.GUI
 
         }
 
-        private void AdminDashboardForm_FormClosed(object sender, FormClosedEventArgs e) => Owner.Close();
+        private void AdminDashboardForm_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            //Owner.Close();
+        }
 
         private void btnViewResults_Click(object sender, EventArgs e)
         {

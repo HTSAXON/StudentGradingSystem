@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
+            btnViewCourses = new Button();
             selectBatch = new ComboBox();
             selectSemester = new ComboBox();
             label1 = new Label();
@@ -36,18 +36,19 @@
             label3 = new Label();
             comboBox1 = new ComboBox();
             label4 = new Label();
-            button2 = new Button();
+            btnViewGradingRules = new Button();
             groupBox1 = new GroupBox();
             SuspendLayout();
             // 
-            // button1
+            // btnViewCourses
             // 
-            button1.Location = new Point(550, 293);
-            button1.Name = "button1";
-            button1.Size = new Size(301, 64);
-            button1.TabIndex = 0;
-            button1.Text = "View Courses";
-            button1.UseVisualStyleBackColor = true;
+            btnViewCourses.Location = new Point(550, 293);
+            btnViewCourses.Name = "btnViewCourses";
+            btnViewCourses.Size = new Size(301, 64);
+            btnViewCourses.TabIndex = 0;
+            btnViewCourses.Text = "View Courses";
+            btnViewCourses.UseVisualStyleBackColor = true;
+            btnViewCourses.Click += btnViewCourses_Click;
             // 
             // selectBatch
             // 
@@ -117,14 +118,15 @@
             label4.Text = "Welcome";
             label4.Click += label4_Click;
             // 
-            // button2
+            // btnViewGradingRules
             // 
-            button2.Location = new Point(12, 404);
-            button2.Name = "button2";
-            button2.Size = new Size(236, 47);
-            button2.TabIndex = 8;
-            button2.Text = "View Grading Rules";
-            button2.UseVisualStyleBackColor = true;
+            btnViewGradingRules.Location = new Point(12, 404);
+            btnViewGradingRules.Name = "btnViewGradingRules";
+            btnViewGradingRules.Size = new Size(236, 47);
+            btnViewGradingRules.TabIndex = 8;
+            btnViewGradingRules.Text = "View Grading Rules";
+            btnViewGradingRules.UseVisualStyleBackColor = true;
+            btnViewGradingRules.Click += btnViewGradingRules_Click;
             // 
             // groupBox1
             // 
@@ -147,9 +149,9 @@
             Controls.Add(label1);
             Controls.Add(selectSemester);
             Controls.Add(selectBatch);
-            Controls.Add(button1);
+            Controls.Add(btnViewCourses);
             Controls.Add(groupBox1);
-            Controls.Add(button2);
+            Controls.Add(btnViewGradingRules);
             Controls.Add(label4);
             Name = "FacultyDashboardForm";
             Text = "Faculty Dashboard";
@@ -161,7 +163,7 @@
 
         #endregion
 
-        private Button button1;
+        private Button btnViewCourses;
         private ComboBox selectBatch;
         private ComboBox selectSemester;
         private Label label1;
@@ -169,7 +171,7 @@
         private Label label3;
         private ComboBox comboBox1;
         private Label label4;
-        private Button button2;
+        private Button btnViewGradingRules;
         private GroupBox groupBox1;
     }
 }
